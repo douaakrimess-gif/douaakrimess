@@ -1,0 +1,264 @@
+/* Style général */
+body {
+    font-family: 'Georgia', serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #bc90329e;
+
+}
+
+/* Header & Titre [cite: 2, 3, 17, 18, 19] */
+header {
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('img/backyum.jpeg');
+    background-size: cover;      
+    background-position: center;  
+    padding: 50px;
+    background-color: #f4e1d2; 
+    border-radius: 20px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+    display: flex;             
+    flex-direction: column;   
+    align-items: center;      
+    justify-content: center;
+    
+}
+
+header h1 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Ombrage du titre [cite: 3] */
+    font-size: 3em;
+    color: #5d4037;
+}
+
+.profile-pic {
+    justify-content: center,url("img/backyum.jpeg");
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Menu Horizontal [cite: 6, 7, 8] */
+nav ul {
+    display: flex; /* Menu horizontal [cite: 8, 21] */
+    justify-content: center;
+    list-style-type: none; /* Pas de puces [cite: 7] */
+    padding: 0;
+    background: #5d4037;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /* Pas de soulignement [cite: 7] */
+    padding: 15px 25px;
+    display: block;
+}
+
+/* Positionnement du QR Code [cite: 5] */
+.qr-code {
+    position: fixed; /* Position spécifique [cite: 5] */
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    border: 2px solid #5d4037;
+}
+
+/* Tableau [cite: 11] */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #dcdcdc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #5d4037;
+    color: white;
+}
+
+/* Boutons [cite: 12, 13] */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #c19a6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/* Footer [cite: 14, 15] */
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #eee;
+}
+
+#copyright {
+    font-style: italic;
+    font-weight: bold; /* Formatage spécial [cite: 15] */
+}
+nav ul li a:hover {
+    background-color: #c19a6b; /* Couleur dorée au survol */
+    color: #fff;
+    transition: 0.3s;
+}
+header {
+    /* Image de fond */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/backyum.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    
+    /* Dimensions et centrage */
+    padding: 100px 20px;
+    text-align: center; /* [cite: 3] */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Style demandé dans le TP */
+    border-radius: 20px; /* Coins arrondis [cite: 18] */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3); /* [cite: 19] */
+    color: white; /* Pour que le texte soit lisible sur le fond */
+}
+
+.header-content h1 {
+    font-size: 4em;
+    margin: 10px 0;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Ombrage du titre [cite: 3, 19] */
+    letter-spacing: 8px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Photo arrondie */
+    border: 3px solid #c19a6b; /* Bordure dorée pour le luxe */
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.slogan {
+    font-size: 1.2em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #f4e1d2;
+}
+/* Style du Titre Principal (Yummella) */
+.logo-title {
+    font-family: 'Great Vibes', cursive; /* Police cursive comme le logo */
+    font-size: 5em;
+    color: #000000; /* Écrit en noir comme demandé */
+    margin: 0;
+    line-height: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Ombrage requis  */
+}
+
+/* Style du Slogan (SWEETS & SAVORIES) */
+.logo-slogan {
+    font-family: 'Montserrat', sans-serif; /* Police moderne et fine */
+    font-size: 1rem;
+    color: #000000;
+    letter-spacing: 5px; /* Espacement des lettres pour le côté luxe */
+    margin-top: -10px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+/* Rappel pour le Header avec image de fond */
+header {
+    background-image:url('img/backyum.jpeg'); /*  */
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center; /* Centrage requis  */
+    border-radius: 20px; /* Coins arrondis requis [cite: 18] */
+}
+/* Styles Généraux */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfaf7; /* Un blanc crème très doux */
+    color: #333;
+    margin: 0;
+}
+
+.creations-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.titre-page {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #b8860b; /* Doré */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.sous-titre {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 50px;
+}
+
+/* Grille de Créations */
+.creations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Style des Cartes */
+.creation-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.creation-card:hover {
+    transform: translateY(-10px); /* Petit saut au survol */
+}
+
+/* Images (Placeholder en couleur en attendant tes photos) */
+.card-image {
+    height: 200px;
+    background-color: #eee;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-marocaine { background-color: #e9c46a; } /* Remplace par url('img/ton-image.jpg') */
+.bg-biscuterie { background-color: #f4a261; }
+.bg-contemporaine { background-color: #e76f51; }
+.bg-chocolaterie { background-color: #6d4c41; }
+.bg-boulangerie { background-color: #d4a373; }
+
+/* Contenu de la Carte */
+.card-content {
+    padding: 25px;
+    text-align: left;
+}
+
+.card-content h3 {
+    margin-top: 0;
+    color: #444;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #fdf2e9;
+    padding-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+}

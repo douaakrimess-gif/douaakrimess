@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarifs | Yummela</title>
+   <link href="style.css" rel="stylesheet">
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+        .creation-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .creation-card:hover { transform: scale(1.05); }
+        .creation-card img { width: 100%; height: 200px; object-fit: cover; }
+        .creation-card h3 { color: #5d4037; padding: 10px; }
+    </style>
+</head>
+<body>
+    <header><h1 class="logo-title">Nos Tarifs</h1></header>
+
+    <main class="table-container">
+        <main>
+        <div class="gallery">
+            <div class="creation-card">
+                <img src="macaron.jpeg" alt="Macaron Royal">
+                <h3>Le Macaron Royal</h3>
+                <h4>30 DHS</h4>
+            </div>
+            <div class="creation-card">
+                <img src="eclair.jpeg" alt="Éclair Chocolat">
+                <h3>Éclair  Chocolat</h3>
+                <h4>14 DHS</h4>
+            </div>
+            <div class="creation-card">
+                <img src="tarte.jpg" alt="Tartelette">
+                <h3>Tartelette Signature</h3>
+                <h4> 10 DHS</h4>
+            </div>
+        </div>
+        
+    </main>
+        <center><a href="index.html" class="btn">Retour à l'accueil</a></center>
+    </main>
+</body>
+</html>
